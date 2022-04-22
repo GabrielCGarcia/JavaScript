@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anotações de JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Anotações de JavaScript</h1>
+        <p>Estarei colocando aqui todas as coisas que eu julgar importantes em JS.</p>
+    </header>
+    <main>
+        <h2>Aula 4 (21/04/22)</h2>
+        <p>Aula inicial, como ativar o JS no HTML e comandos simples de alerta!</p>
+        <ul>
+            <li><strong>STRING</strong> - Em JavaScript para se colocar o código deve iniciar com a tag <strong>string</strong> tudo que for colocado dentro dela será considerado JS, é recomendado fazer uma aba a parte, assim como em CSS</li>
+            <p>Exemplo: <br>
+                &lt;string&gt; <br>
+                window.confirm('Gostaria de prosseguir?') <br>
+                window.alert('Minha primeira mensagem') <br>
+                window.prompt('Qual o seu nome?') <br>
+                &lt;string&gt;
+            </p>
+            <li><strong>WINDOW.ALERT</strong> - Para emitir uma box de alerta, onde a unica opção do usuario é dar OK</li>
+            <p>Exemplo: <strong>window.alert('Minha primeira mensagem')</strong></p>
+            <li><strong>WINDOW.CONFIRM</strong> - Para emitir uma box de aviso, onde o usuario tem a opção de dar OK ou CANCELAR</li>
+            <p>Exemplo: <strong>window.confirm('Gostaria de prosseguir?')</strong></p>
+            <li><strong>WINDOW.PROMPT</strong> - Emite uma box onde o usario deve escrever algo dentro da caixa</li>
+            <p>Exemplo: <strong>window.prompt('Qual o seu nome?')</strong></p>
+        </ul>
+        <br>
+        <h2>Aula 6 (22/04/22)</h2>
+        <p>Foco da aula em Tratamentos de dados e Variaveis!</p>
+        <ul>
+            <li>VAR NOME - Para criar uma variavel você pode usar o <strong>var nome</strong> ou <strong>let nome</strong>, sendo o padrão usar var.</li>
+            <li>O simbolo " = " em JS tem valor de receber</li>
+            <p>Exemplo: <strong>var nome=Gabriel</strong>, podemos ler como "var nome recebe Gabriel", ou seja, a partir de agora a variavel nome tem o dado de Gabriel</p>
+            <li>As letras Grandes ou pequenas fazem diferença, ou seja, Nome ou nome serão consideradas variaveis diferentes</li>
+            <li>Para usarmos a variavel em algum momento depois devemos usar o " + ", sendo que o + tem valor de concatenação no JS, ou seja, ele junta um texto com uma variavel, por exemplo.</li>
+            <p>Exemplo: <strong>window.alert('Prazer em te conhecer, ' + nome)</strong>, desse modo a mensagem que irá aparecer será: Prazer em te conhecer, Gabriel</p>
+            <li>Outro modo de concatenar dados é usando " ${} ", sendo que a variavel deve ficar dentro das chaves</li>
+            <p>Exemplo: <strong>window.alert('Prazer em te conhecer, ${nome})</strong>, desse modo a mensagem que irá aparecer será: Prazer em te conhecer, Gabriel</p>
+        </ul>
+    </main>
+</body>
+</html>
