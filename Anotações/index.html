@@ -12,9 +12,10 @@
         <h1>Anotações de JavaScript</h1>
         <p>Estarei colocando aqui todas as coisas que eu julgar importantes em JS.</p>
     </header>
-    <main>
+    <main> 
+     <!-- ANOTAÇÕES DA AULA 4 -->
         <h2>Aula 4 (21/04/22)</h2>
-        <p>Aula inicial, como ativar o JS no HTML e comandos simples de alerta!</p>
+            <p>Aula inicial, como ativar o JS no HTML e comandos simples de alerta!</p>
         <ul>
             <li><strong>STRING</strong> - Em JavaScript para se colocar o código deve iniciar com a tag <strong>string</strong> tudo que for colocado dentro dela será considerado JS, é recomendado fazer uma aba a parte, assim como em CSS</li>
             <p>Exemplo: <br>
@@ -31,19 +32,84 @@
             <li><strong>WINDOW.PROMPT</strong> - Emite uma box onde o usario deve escrever algo dentro da caixa</li>
             <p>Exemplo: <strong>window.prompt('Qual o seu nome?')</strong></p>
         </ul>
-        <br>
+<!-- Fim do Modulo A de JavaScript -->
+<br> <!-- ANOTAÇÕES DA AULA 6 -->
         <h2>Aula 6 (22/04/22)</h2>
-        <p>Foco da aula em Tratamentos de dados e Variaveis!</p>
+            <p>Foco da aula em Tratamentos de dados e Variaveis!</p>
         <ul>
-            <li>VAR NOME - Para criar uma variavel você pode usar o <strong>var nome</strong> ou <strong>let nome</strong>, sendo o padrão usar var.</li>
+            <li><strong>VAR, LET, CONST</strong> - Para criar uma variavel você pode usar o <strong>var</strong>, <strong>let</strong> ou <strong>const</strong>, sendo o padrão usar const pois este não pode ser alterado posteriomrente.</li>
             <li>O simbolo " = " em JS tem valor de receber</li>
             <p>Exemplo: <strong>var nome=Gabriel</strong>, podemos ler como "var nome recebe Gabriel", ou seja, a partir de agora a variavel nome tem o dado de Gabriel</p>
             <li>As letras Grandes ou pequenas fazem diferença, ou seja, Nome ou nome serão consideradas variaveis diferentes</li>
             <li>Para usarmos a variavel em algum momento depois devemos usar o " + ", sendo que o + tem valor de concatenação no JS, ou seja, ele junta um texto com uma variavel, por exemplo.</li>
-            <p>Exemplo: <strong>window.alert('Prazer em te conhecer, ' + nome)</strong>, desse modo a mensagem que irá aparecer será: Prazer em te conhecer, Gabriel</p>
+            <p>Exemplo: <strong>window.alert('Prazer em te conhecer, ' + nome)</strong>, desse modo a mensagem que irá aparecer será: <br> Prazer em te conhecer, Gabriel</p>
             <li>Outro modo de concatenar dados é usando " ${} ", sendo que a variavel deve ficar dentro das chaves</li>
-            <p>Exemplo: <strong>window.alert('Prazer em te conhecer, ${nome})</strong>, desse modo a mensagem que irá aparecer será: Prazer em te conhecer, Gabriel</p>
+            <p>Exemplo: <strong>window.alert('Prazer em te conhecer, ${nome})</strong>, desse modo a mensagem que irá aparecer será: <br> Prazer em te conhecer, Gabriel</p>
         </ul>
+<br> <!-- ANOTAÇÕES DA AULA 7 -->
+        <h2>Aula 7 (23/04/22)</h2>
+            <p>Foco da aula em Operadores Aritmeticos e de Atribuição</p>
+        <ul>
+            <li>Os operadores aritimeticos no JS são, <strong>(), **,*, /, % (a % serve para entregar o resultado inteiro de alguma divisão, por exemplo, 5/2 daria 2,5, agora o 5%2 da 1, sendo o resto inteiro da divisão de 5 e 2), +, -</strong>.</li>
+            <li>Assim como na matematica normal, no JS os operadores possuem ordem de precedencia, sendo elas: <br><strong>
+                () Parenteses. <br>
+                ** Potencia. <br>
+                *, /, % Multiplicação, Divisão e Divisão com resto inteiro, por terem a mesma importação a prioridade se da por ordem da esquerda para a direita. <br>    
+                -, + Soma e Substração. <br> </strong></li>
+            <li><strong>Auto-atribuições</strong>: caso eu tenha uma variação com um valor numero, posso alterar ela diretamente, por exemplo: <br>
+                <strong>
+                    n = 3 <br>
+                    n = n + 4 <br>
+                    n = 7</strong>
+            </li>
+            <li><strong>Simplicando as auto atribuições:</strong> Para simplicar pasta usar o nome da variavel seguido do operadore o '=' do lado, exemplo: <br>
+                <strong>
+                    n = 3 <br>
+                    n += 4 <br>
+                    n = 7</strong>
+            </li>
+            <li>Operador de Incremento: Para adicionar 1 ou retira 1, podemos usar: <br>
+                <strong>
+                    n = 3 <br>
+                    n ++ <br>
+                    n = 4</strong>
+            </li>
+        </ul>
+<br> <!-- ANOTAÇÕES DA AULA 8 -->
+        <h2>Aula 8 (23/04/22)</h2>
+            <p>Foco da aula em Operadores Relacionais, Logicos e Ternarios.</p>
+        <ul>
+            <li><strong>Relacionais:</strong> Os operadores relacionais só entregam resultados de True ou False, sendo eles: <br>
+            <strong>&gt;, &lt;, &gt;=, &lt;=, ==, !=</strong>
+            </li>
+            <li><strong>Logicos:</strong> Os operadores logicos são o <strong>!, &&, ||.</strong></li>
+            <li>!: representa Negação, só retorna <br>
+                <strong>True ou False</strong></li>
+            <li>&&: representa Conjunção, tem 4 retornos, sendo eles: <br>
+            <strong>
+                true && true = true <br>
+                true && false = False <br>
+                false && true = true <br>
+                false && false = false
+            </strong>
+            </li>
+            <li>||: representa Disjunção, tem 4 retornos, sendo eles: <br>
+            <strong>
+                true && true = true <br>
+                true && false = True <br>
+                false && true = true <br>
+                false && false = false
+            </strong>
+            </li>
+            <li>Operador ternario: são eles ? e :</li>
+            <li>Os operadores ternarios entregam um ou outro, exemplo: <br>
+            <strong>
+                media >= 7.0 ? "aprovado" : "reprovado"
+            </strong>  
+                Ou seja, se a media foi maior ou igual a 7 ele é aprovado, se não ele é reprovado.  
+            </li>
+        </ul>
+<!-- Fim do Modulo B de JavaScript -->
     </main>
 </body>
 </html>
