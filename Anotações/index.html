@@ -110,6 +110,51 @@
             </li>
         </ul>
 <!-- Fim do Modulo B de JavaScript -->
+<br> <!-- ANOTAÇÕES DA AULA 10 -->
+        <h2>Aula 10 (24/04/22)</h2>
+            <p>Foco da aula em Eventos DOM e Funções.</p>
+        <ul>
+            <li>Em JavaScript possuimos diversos eventos, alguns mais comuns são os que estão ligados ao mouse, por exemplo:
+                <strong>
+                    mouseenter <br>
+                    mousemove <br>
+                    mousedown <br>
+                    mouseup <br>
+                    click <br>
+                    mouseout <br>
+                </strong>
+            </li>
+            <li>Para utilizarmos os eventos precisamos definir funções, exemplo abaixo para o evento clicar: <br>
+                Criar uma div com id "area" seguido de onclick="clicar()" <br>
+                <strong> &lt;div id="area" onclick="clicar()"&gt; <br>
+                    interaja... <br>
+                &lt;/div&gt;</strong> <br>
+                No script adicionar a variavel que irá selecionar o local, nese caso o nome da variavel é "a", após isso definir a função, nesse caso ela busca a ação "clicar" e altera o texto "interaja" para "clicou": <br>
+                <strong>
+                    &lt;script&gt; <br>
+                        var a = document.getElementById('area') <br>
+                        function clicar() { <br>
+                            a.innerText = 'Clicou!' <br>
+                        } <br>
+                    &lt;/script&gt;
+                </strong>
+            </li>
+            <li>Para deixar o HTML menos poluido podemos usar o Listener dentro do JavaScript, conforme abaixo: <br>
+                <strong>
+                    &lt;div id="area"&gt; <br>
+                        interaja... <br>
+                    &lt;/div&gt; <br>
+                    &lt;script&gt; <br>
+                        var a = document.getElementById('area') <br>
+                        a.addEventListener('click', clicar) <br>
+                        function clicar() { <br>
+                            a.innerText = 'Clicou!' <br>
+                            a.style.background = 'red' <br>
+                        } <br>
+                    &lt;/script&gt;
+                </strong>
+            </li>
+        </ul>
     </main>
 </body>
 </html>
