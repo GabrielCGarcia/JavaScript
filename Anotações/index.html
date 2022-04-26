@@ -155,6 +155,32 @@
                 </strong>
             </li>
         </ul>
+<br> <!-- ANOTAÇÕES DA AULA 11 -->
+            <h2>Aula 11 (25/04/22)</h2>
+                <p>Foco da aula em If e Else.</p>
+            <ul>
+                <li>Segue abaixo exemplo de If Else: <strong> <br>
+                    &lt;h1&gt;Sistema de identificação de nacionalidade.&lt;/h1&gt; <br>
+                   Coloque seu País de origem: &lt;input type="text" name='pais'id="pais"&gt; <br>
+                   &lt;input type="button" value="Verificar" onclick="veja()"&gt; <br>
+                   &lt;div id="res"&gt; <br>
+                       <br>
+                   &lt;/div&gt; <br>
+                   &lt;script&gt; <br>
+                       function veja() { <br>
+                           var pais = window.document.getElementById('pais') <br>
+                           var res = window.document.getElementById('res') <br>
+                           var vel = String(pais.value) <br>
+                           if (vel == 'Brasil' || vel == 'brasil') { <br>
+                               res.innerHTML = 'Você é Brasileiro!' <br>
+                           } else ( <br>
+                               res.innerHTML = 'Você não é Brasileiro!' <br>
+                           ) <br>
+                       } <br>
+                    &lt;/script&gt;  <br>
+        </strong>
+            </li>
+        </ul>
     </main>
 </body>
 </html>
