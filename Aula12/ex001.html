@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando condição composta</title>
+</head>
+<body>
+    <h2>Condição para voto!</h2>
+    Coloque sua idade: <input type="number" name="idade" id="idade">
+    <input type="button" value="Verificar" onclick="veja()">
+    <div id="res">
+
+    </div>
+    <script>
+        function veja() {
+            var idade = window.document.getElementById('idade')
+            var res = window.document.getElementById('res')
+            var num = Number(idade.value)
+            res.innerHTML = `<br>Você tem ${num} anos!<br>`
+            if (num < 16) {
+                res.innerHTML += '<br>Não pode votar!'
+            } else if (num < 18 || num >= 65) {
+                res.innerHTML += '<br>Voto opcional!'
+            }
+              else {
+                res.innerHTML += '<br>Voto obrigatorio!'
+            }
+            }
+    </script>
+</body>
+</html>
