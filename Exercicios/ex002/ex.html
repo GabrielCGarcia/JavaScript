@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Verificar de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento:
+                <input type="number" name="txtano" id="txtano" min="1922">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="mas" checked>
+                <label for="mas">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Calcular" onclick="verificar()">
+            </p>
+        </div>
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
+        </div> <br>
+        <div id="msg">
+
+        </div>
+        <div>
+            <p id="oms"><em>De acordo com a OMS, a faixa etaria segue o seguinte padrão: Bebê até 3 anos, criança entre 4 e 10 anos, adolescente estão entre 10 e 19 anos, jovens entre 15 e 24 anos, adulto jovem de 25 a 44 anos, adultos de 45 a 59 anos e idosos acima de 60 anos.</em></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Made by Gabriel.CG</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
