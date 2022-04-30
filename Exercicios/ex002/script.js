@@ -4,7 +4,7 @@ function verificar() {
     var fano = document.getElementById('txtano')
     var res = document.getElementById('res')
     var msg = document.getElementById('msg')
-    if (fano.value.length == 0 || Number(fano.value) > ano) {
+    if (Number(fano.value) < 1922 || Number(fano.value) > ano) {
         window.alert('[ERRO] Por gentileza, verificar os dados informados e tentar novamente!')
     } else {
         var fsex = document.getElementsByName('radsex')
